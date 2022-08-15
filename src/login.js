@@ -51,7 +51,7 @@ const Login = () => {
 					<input className='placeholder' type="text" placeholder={"Enter your OTP"}
 						onChange={(e) => { setotp(e.target.value) }}></input>
 					<br /><br />
-					<button onClick={ValidateOtp}>Verify</button>
+					<button className='button' onClick={ValidateOtp}>Verify</button>
 				</div>
 			</center>
 		</div>
