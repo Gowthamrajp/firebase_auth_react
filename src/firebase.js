@@ -1,7 +1,6 @@
-import firebase from 'firebase';
-import { initializeApp } from "firebase/app";
-import { FacebookAuthProvider } from "firebase/app";
-import "firebase/auth";
+
+import firebase from 'firebase/compat/app';
+import "firebase/compat/auth";
   
 const firebaseConfig = {
     apiKey: "AIzaSyCHALmUszDP38V8thOmvmO268ltd3-0aGc",
