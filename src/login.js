@@ -40,15 +40,15 @@ const Login = () => {
 		<div style={{ "marginTop": "200px" }}>
 			<center>
 				<div style={{ display: !show ? "block" : "none" }}>
-					<input value={mynumber} onChange={(e) => {
+					<input className='placeholder' value={mynumber} onChange={(e) => {
 					setnumber(e.target.value) }}
-						placeholder="phone number" />
+						placeholder="Phone number with +91" />
 					<br /><br />
 					<div id="recaptcha-container"></div>
-					<button onClick={signin}>Send OTP</button>
+					<button className='button' onClick={signin}>Send OTP</button>
 				</div>
 				<div style={{ display: show ? "block" : "none" }}>
-					<input type="text" placeholder={"Enter your OTP"}
+					<input className='placeholder' type="text" placeholder={"Enter your OTP"}
 						onChange={(e) => { setotp(e.target.value) }}></input>
 					<br /><br />
 					<button onClick={ValidateOtp}>Verify</button>

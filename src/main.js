@@ -11,7 +11,7 @@ const Mainpage = () => {
         <div style={{ marginTop: 250 }}>
             <center>
                 <h3>Welcome {auth.currentUser.phoneNumber}</h3>
-                <button style={{ "marginLeft": "20px" }} 
+                <button className='button' 
                   onClick={logout}>Logout</button>
             </center>
         </div>
